@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+	<meta charset="UTF-8">
+	<title>Door Demo</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel='stylesheet' href='https://cdn.jsdelivr.net/jquery.slick/1.5.0/slick.css'>
+	<link rel='stylesheet' href='https://cdn.jsdelivr.net/jquery.slick/1.5.0/slick-theme.css'>
+	<link rel="stylesheet" href="./style.css?v=2">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+
+	<!-- !! Doors Carousel Start !! -->
+	<div class="doors-wrapper">
+		<div class="slider doors">       
+			<div class="slide" style="--offset:9%;">
+				<a class="cl" id="home-health-door" href="images/panel-home-health.png" data-video="/home-care-hospice-stories/">
+					<img src="./images/door1_sm.png" />
+				</a>
+			</div>
+			<div class="slide" style="--offset:8%;">
+				<a class="cl" id="pediatric-door" href="images/panel-pediatrics.png" data-video="/home-care-hospice-stories/">
+					<img src="./images/door2_sm.png" />
+				</a>
+			</div>
+			<div class="slide" style="--offset:9%;">
+				<a class="cl" id="adult-nursing-door" href="images/panel-adult-nursing.png" data-video="/home-care-hospice-stories/">
+					<img src="./images/door3_sm.png" />
+				</a>
+			</div>
+			<div class="slide" style="--scale:1.4;">
+				<a class="cl" id="hospice-door" href="images/panel-hospice.png" data-video="/home-care-hospice-stories/">
+					<img src="./images/door4_sm.png" />
+				</a>
+			</div>
+			<div class="slide" style="--offset:11%;">
+				<a class="cl" id="senior-care-door" href="images/panel-senior-care.png" data-video="/home-care-hospice-stories/">
+					<img src="./images/door5_sm.png" />
+				</a>
+			</div>
+		</div>
+		<div class="doors-background">
+			<div class="doors-title"><img src="images/title-text.png" alt="The Difference Is Home. Open a door to see more!"></div>
+		</div>
+	</div>
+	<div class="hidden" aria-hidden="true" hidden>
+		<img src="images/panel-home-health.png">
+		<img src="images/panel-pediatrics.png">
+		<img src="images/panel-adult-nursing.png">
+		<img src="images/panel-hospice.png">
+		<img src="images/panel-senior-care.png">
+	</div>
+	<!-- !! END - Doors Carousel -->
+</div>
+
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js'></script>
+<script  src="./script.js?v=2"></script>
+
+</body>
+</html>

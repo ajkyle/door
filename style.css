@@ -1,0 +1,216 @@
+/*****************************************
+*  --------------------------------------*
+*  General - Presentation styles         *
+*  --------------------------------------*
+*****************************************/
+body {
+  background: #b9cacb;
+}
+
+.container {
+  	padding: 50px;
+}
+
+
+/*****************************************
+*  --------------------------------------*
+*  Doors Carousel Styles                 *
+*  --------------------------------------*
+*****************************************/
+	.doors-wrapper {
+		display: flex;
+		overflow: hidden;
+		position: relative;
+		width: 100%;
+	}
+
+		.doors-wrapper::before {
+			content: '';
+			height: 0;
+			padding-bottom: 38.25%;
+		}
+
+	.doors-background {
+		background: linear-gradient(180deg, #adc1c2 0%, #e2ebec 59%, #b4c6c7 59%, #dee8e9 100%);
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: 1;
+	}
+
+	.doors-title {
+		bottom: 5%;
+		left: 50%;
+		position: absolute;
+		transform: translateX(-50%);
+		width: 37%;
+	}
+
+		.doors-title img {
+			height: auto;
+			max-width: 100%;
+		}
+
+	.cl {
+	/* height: 530px; */
+		align-items: center;
+		background: transparent;
+		backface-visibility: hidden;
+		display: flex;
+		justify-content: center;
+		max-height: inherit;
+		outline: none;
+		pointer-events: none;
+		text-align: center;
+		transform: scale(.7) translateY(-16%);
+		transform-origin: 50% 50%;
+		transition: all 0.4s ease-out;
+	}
+
+		.cl img {
+			max-width: 100%;
+			max-height: 100%;
+			transform: translateX( var(--offset, 0) ) scale( var(--scale, 1) );
+		}
+
+		.cl.state-active {
+			transform: scale(1) translateY(1%);
+		}
+
+.doors-wrapper .slider { 
+	height: 100%;
+	position: absolute;
+	width: 100%;
+	z-index: 10;
+}
+	/* Center line to check alignment */
+	/* .doors-wrapper .slider::before {
+		background: green;
+		content: '';
+		height: 100%;
+		left: 50%;
+		position: absolute;
+		width: 1px;
+	} */
+
+	.doors-wrapper .slide {
+		max-height: 100%;
+	}
+
+	.doors-wrapper .slide.slick-current a {
+		pointer-events: all;
+	}
+
+	.doors-wrapper .slick-current {
+		position: relative;
+		z-index: 40;
+	}
+
+	.doors-wrapper .slick-slide {
+	/*	align-content: center; */
+		display: flex !important;
+		justify-content: center;
+		height: auto;
+		outline: none;
+	}
+
+	.doors-wrapper .slick-list {
+		height: 100%;
+	}
+
+	.doors-wrapper .slick-track {
+		/* align-items: center; */
+		display: flex;
+		height: 100%;
+		overflow: hidden;
+		transform: none !important;
+	}
+
+	.doors-wrapper .slide:not(.slick-active) {
+		cursor: pointer;
+	}
+
+	.doors-wrapper .slick-arrow {
+		z-index: 30;
+	}
+
+	.doors-wrapper .slick-prev {
+		left: 40px;
+	}
+
+	.doors-wrapper .slick-next {
+		right: 40px;
+	}
+
+.active-panel {
+	height: 100%;
+	left: 50%;
+	overflow: hidden;
+	pointer-events: none;
+	position: fixed;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	transition: width 0.75s ease-out;
+	width: 0;
+	z-index: 20;
+}
+
+	.active-panel.open {
+		pointer-events: all;
+		width: 100vw;
+	}
+
+	.active-panel img {
+		height: 100%;
+		left: 50%;
+		object-fit: contain;
+		position: absolute;
+		top: 0;
+		transform: translateX(-50%);
+		width: 100vw;
+	}
+
+	.panel-video-link {
+		display: block;
+		position: absolute;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 20;
+	}
+
+		.panel-video-link.adult-nursing-door {
+			height: 40%;
+			right: 10%;
+			top: 40%;
+			width: 18%;
+		}
+
+		.panel-video-link.pediatric-door {
+			height: 38%;
+			right: 13%;
+			top: 43%;
+			width: 17%;
+		}
+
+		.panel-video-link.home-health-door {
+			height: 47%;
+			right: 6%;
+			top: 45%;
+			width: 20%;
+		}
+
+		.panel-video-link.senior-care-door {
+			height: 40%;
+			right: 9%;
+			top: 49%;
+			width: 20%;
+		}
+
+		.panel-video-link.hospice-door {
+			height: 50%;
+			right: 0%;
+			top: 45%;
+			width: 20%;
+		}
